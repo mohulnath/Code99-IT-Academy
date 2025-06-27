@@ -83,7 +83,7 @@ import Whatsapp from './fixed img/whatsapp-fill.png'
 import Tube from './youtube png/youtube.png'
 
 
-import webdevelopment from './courses-images/webDevelopment.PNG';
+import webdeve from './courses-images/web.png';
 import python from './courses-images/python.png';
 import java from './courses-images/java.png';
 import marketing from './courses-images/digitalMarketing.png';
@@ -95,10 +95,9 @@ import cursortow from './courses-images/javacursor.png';
 import cursorthree from './courses-images/digitalcursor.png';
 import cursorfore from './courses-images/webcursor.png';
 import cursorfive from './courses-images/uiuxcursor.png';
-import image from './courses-images/img.png'
 const Images = {
 
-  webdevelopment,
+  webdeve,
   python,
   java,
   marketing,
@@ -110,7 +109,6 @@ const Images = {
   cursorthree,
   cursorfore,
   cursorfive,
-  image,
 
   Tube,
   

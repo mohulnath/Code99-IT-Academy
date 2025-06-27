@@ -36,7 +36,7 @@ function App() {
       id: 'web',
       title: 'Full Stack',
       span: 'Web Development',
-      image: Image.webdevelopment,
+      image: Image.webdeve,
     },
     {
       id: 'python',
