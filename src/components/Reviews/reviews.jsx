@@ -1,6 +1,5 @@
 // src/components/Reviews/Reviews.jsx
 import React from 'react';
-import './Reviews.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCoverflow, Navigation } from 'swiper/modules';
 import { IoStarSharp } from 'react-icons/io5';
@@ -9,6 +8,8 @@ import vector7 from '../../assets/vector7.png';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/navigation';
+
+import './Reviews.css';
 
 import { MdArrowLeft, MdArrowRight } from 'react-icons/md';
 
