@@ -44,7 +44,7 @@ import company19 from './placed company/company19.png';
 import company20 from './placed company/company20.png';
 
 import Course1 from './Courses/java.png';
-import Course2 from './Courses/python.svg';
+import Course2 from './Courses/python.png';
 import Course3 from './Courses/web.png';
 import Course4 from './Courses/digital.png';
 import Course5 from './Courses/uiux.png';
@@ -83,7 +83,7 @@ import Whatsapp from './fixed img/whatsapp-fill.png'
 import Tube from './youtube png/youtube.png'
 
 
-import webdevelopment from './courses-images/webdevelopment.PNG';
+import webdevelopment from './courses-images/webDevelopment.PNG';
 import python from './courses-images/python.png';
 import java from './courses-images/java.png';
 import marketing from './courses-images/digitalMarketing.png';
