@@ -1,0 +1,823 @@
+/* <!----------------------images---------------------> */
+
+.imagess {
+    width: 100%;
+    padding: 20px 20px 80px 20px;
+    background-color: #EBF8D5;
+}
+
+.img-box {
+    width: 100%;
+    height: 65vh;
+    position: relative;
+}
+
+.img-box img {
+    width: 100%;
+    height: 65vh;
+    object-fit: contain;
+}
+
+.img-box-top {
+    width: 100%;
+    height: 48vh;
+    position: absolute;
+    top: 32px;
+}
+
+.moving-java {
+    position: absolute;
+    right: 14%;
+    top: 42%;
+    animation: movingone 2s ease-in-out infinite;
+}
+
+@keyframes movingone {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    30% {
+        transform: translate(5px, -3px);
+    }
+
+    50% {
+        transform: translate(0, -10px);
+    }
+
+    80% {
+        transform: translate(-5px, -4px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.moving-python {
+    position: absolute;
+    right: 17%;
+    bottom: -5px;
+    animation: movingtow 2s ease-in-out infinite;
+}
+
+@keyframes movingtow {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    30% {
+        transform: translate(0, -10px);
+    }
+
+    50% {
+        transform: translate(-5px, -4px);
+    }
+
+    80% {
+        transform: translate(5px, -3px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.moving-digital {
+    position: absolute;
+    right: 45%;
+    top: 35px;
+    animation: movingthree 2s ease-in-out infinite;
+}
+
+@keyframes movingthree {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    30% {
+        transform: translate(0, -10px);
+    }
+
+    50% {
+        transform: translate(-5px, -4px);
+    }
+
+    80% {
+        transform: translate(5px, -3px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.moving-uiux {
+    position: absolute;
+    left: 14%;
+    top: 42%;
+    animation: movingfore 2s ease-in-out infinite;
+}
+
+@keyframes movingfore {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    30% {
+        transform: translate(0, -10px);
+    }
+
+    50% {
+        transform: translate(-5px, -4px);
+    }
+
+    80% {
+        transform: translate(5px, -3px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.moving-web {
+    position: absolute;
+    left: 15%;
+    bottom: -8px;
+    animation: movingfive 2s ease-in-out infinite;
+}
+
+@keyframes movingfive {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    30% {
+        transform: translate(5px, -3px);
+    }
+
+    50% {
+        transform: translate(0, -10px);
+    }
+
+    80% {
+        transform: translate(-5px, -4px);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+.moving-java img,
+.moving-python img,
+.moving-uiux img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    margin-left: -12px;
+}
+
+.moving-digital img,
+.moving-uiux img,
+.moving-web img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    margin-left: 95%;
+}
+
+.moving-java div,
+.moving-python div,
+.moving-digital div,
+.moving-uiux div {
+    width: 150px;
+    height: 5vh;
+    background-color: #9dbdf2;
+    padding: 7px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.moving-python div {
+    background-color: #f5da67;
+}
+
+.moving-digital div {
+    background-color: #f979bd;
+}
+
+.moving-uiux div {
+    background-color: #f16fec;
+}
+
+.moving-web div {
+    width: 200px;
+    height: 5vh;
+    background-color: #ff8590;
+    padding: 7px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.moving-java div p,
+.moving-python div p,
+.moving-digital div p,
+.moving-uiux div p,
+.moving-web div p {
+    margin: 0 !important;
+    font-size: 13px;
+}
+
+.img-box-bottom {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+}
+
+.img-box-bottom button {
+    width: 210px;
+    height: 6vh;
+    background-color: #90D916;
+    color: white;
+    border-radius: 25px;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+}
+
+@media screen and (max-width:980px) and (min-width:890px) {
+    .img-box-top {
+        height: 35vh;
+        top: 30px;
+    }
+
+    .img-box-bottom {
+        bottom: 35px;
+    }
+
+    .img-box-bottom button {
+        font-size: 17px;
+    }
+
+    .moving-java {
+        right: 7%;
+        top: 45%;
+    }
+
+    .moving-python {
+        bottom: -15%;
+        right: 10%;
+    }
+
+    .moving-uiux {
+        left: 8%;
+        top: 48%;
+    }
+
+    .moving-web {
+        bottom: -26%;
+        left: 8%;
+    }
+}
+
+@media screen and (max-width:890px) and (min-width:800px) {
+    .img-box-top {
+        height: 35vh;
+        top: 30px;
+    }
+
+    .img-box-bottom {
+        bottom: 35px;
+    }
+
+    .img-box-bottom button {
+        font-size: 17px;
+    }
+
+    .moving-java {
+        right: 5%;
+        top: 52%;
+    }
+
+    .moving-python {
+        bottom: -19%;
+        right: 7%;
+    }
+
+    .moving-uiux {
+        left: 4%;
+        top: 51%;
+    }
+
+    .moving-web {
+        bottom: -15%;
+        left: 3%;
+    }
+
+    .moving-digital {
+        top: 45px;
+    }
+}
+
+@media screen and (max-width:800px) and (min-width:750px) {
+    .img-box-top {
+        height: 35vh;
+        top: 30px;
+    }
+
+    .img-box-bottom {
+        bottom: 51px;
+    }
+
+    .img-box-bottom button {
+        font-size: 17px;
+        width: 170px;
+    }
+
+    .moving-java {
+        right: 5%;
+        top: 52%;
+    }
+
+    .moving-python {
+        bottom: -19%;
+        right: 7%;
+    }
+
+    .moving-uiux {
+        left: 4%;
+        top: 51%;
+    }
+
+    .moving-web {
+        bottom: -15%;
+        left: 3%;
+    }
+
+    .moving-digital {
+        top: 55px;
+    }
+
+    .moving-java div,
+    .moving-python div,
+    .moving-uiux div,
+    .moving-digital div {
+        width: 135px;
+        padding: 5px;
+    }
+
+    .moving-web div {
+        width: 175px;
+    }
+}
+
+@media screen and (max-width:750px) and (min-width:650px) {
+    .img-box-top {
+        height: 35vh;
+        top: 40px;
+    }
+
+    .img-box-bottom {
+        bottom: 30px;
+        height: 10vh;
+    }
+
+    .img-box-bottom button {
+        font-size: 17px;
+        width: 170px;
+    }
+
+    .img-box {
+        height: 55vh;
+    }
+
+    .moving-java {
+        right: 8%;
+        top: 52%;
+    }
+
+    .moving-python {
+        bottom: -19%;
+        right: 11%;
+    }
+
+    .moving-uiux {
+        left: 8%;
+        top: 51%;
+    }
+
+    .moving-web {
+        bottom: -15%;
+        left: 8%;
+    }
+
+    .moving-digital {
+        top: 72px;
+        left: 40%;
+    }
+
+    .moving-java div,
+    .moving-python div,
+    .moving-uiux div,
+    .moving-digital div {
+        width: 100px;
+        padding: 5px;
+        height: 4vh;
+    }
+
+    .moving-java div p,
+    .moving-python div p,
+    .moving-uiux div p,
+    .moving-digital div p {
+        font-size: 10px;
+    }
+
+    .moving-web div {
+        width: 130px;
+        padding: 9px;
+    }
+
+    .moving-web div p {
+        font-size: 8px;
+    }
+
+    .img-box-bottom button {
+        width: 150px;
+        font-size: 15px;
+        height: 5vh;
+        padding: 2px;
+    }
+
+    .moving-python img,.moving-java img{
+        margin-left: -10px;
+        margin-bottom: -15px;
+    }
+    .moving-uiux img{
+        margin-left: 90px;
+        margin-bottom: -15px;
+    }
+    .moving-digital img{
+        margin-left: 90px;
+        margin-top: -20px;
+    }
+    .moving-web img{
+        margin-left: 120px;
+        margin-bottom: -15px;
+    }
+}
+
+@media screen and (max-width:650px) and (min-width:550px) {
+    .img-box-top {
+       height: 25vh;
+        top: 0px;
+    }
+
+    .img-box-bottom {
+                bottom: 12px;
+        height: 10vh;
+    }
+
+    .img-box-bottom button {
+        font-size: 17px;
+        width: 170px;
+    }
+
+    .img-box {
+        height: 35vh;
+    }
+
+    .box-img{
+        height: 35vh !important;
+    }
+
+    .images{
+        min-height: 40vh;
+    }
+
+    .moving-java {
+        right: 6%;
+        top: 37%;
+    }
+
+    .moving-python {
+        bottom: -8%;
+        right: 9%;
+    }
+
+    .moving-uiux {
+        left: 7%;
+        top: 33%;
+    }
+
+    .moving-web {
+        bottom: -10%;
+        left: 4%;
+    }
+
+    .moving-digital {
+        top: 27px;
+        left: 42%;
+    }
+
+    .moving-java div,
+    .moving-python div,
+    .moving-uiux div,
+    .moving-digital div {
+        width: 90px;
+        padding: 6px;
+        height: 4vh;
+    }
+
+    .moving-java div p,
+    .moving-python div p,
+    .moving-uiux div p,
+    .moving-digital div p {
+        font-size: 8px;
+    }
+
+    .moving-web div {
+        width: 130px;
+        padding: 9px;
+    }
+
+    .moving-web div p {
+        font-size: 8px;
+    }
+
+    .img-box-bottom button {
+       width: 100px;
+        font-size: 10px;
+        height: 4vh;
+        padding: 2px;
+    }
+
+    .moving-python img,.moving-java img{
+        margin-left: -10px;
+        margin-bottom: -15px;
+    }
+    .moving-uiux img{
+        margin-left: 80px;
+        margin-bottom: -15px;
+    }
+    .moving-digital img{
+        margin-left: 80px;
+        margin-top: -20px;
+    }
+    .moving-web img{
+        margin-left: 120px;
+        margin-bottom: -15px;
+    }
+    .span-icon{
+        height: 4vh;
+        width: 30px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:550px) and (min-width:450px) {
+    .img-box-top {
+        height: 15vh;
+        top: 10px;
+    }
+
+    .images{
+        min-height: 42vh;
+    }
+
+    .img-box-bottom {
+        bottom: 30px;
+        height: 10vh;
+    }
+
+    .img-box-bottom button {
+        font-size: 17px;
+        width: 170px;
+    }
+
+    .img-box {
+        height: 35vh;
+    }
+    
+    .img-box img{
+        height: 32vh;
+    }
+
+    .moving-java {
+       right: 10%;
+        top: 40%;
+    }
+
+    .moving-python {
+                bottom: -40%;
+        right: 12%;
+    }
+
+    .moving-uiux {
+        left: 11%;
+        top: 39%;
+    }
+
+    .moving-web {
+        bottom: -45%;
+        left: 7%;
+    }
+
+    .moving-digital {
+        top: 18px;
+        left: 42%;
+    }
+
+    .moving-java div,
+    .moving-python div,
+    .moving-uiux div,
+    .moving-digital div {
+        width: 60px;
+        padding: 6px;
+        height: 3vh;
+    }
+
+    .moving-java div p,
+    .moving-python div p,
+    .moving-uiux div p,
+    .moving-digital div p {
+        font-size: 5px;
+    }
+
+    .moving-web div {
+        width: 100px;
+        padding: 5px;
+        height: 3vh
+    }
+
+    .moving-web div p {
+        font-size: 5px;
+    }
+
+    .img-box-bottom button {
+               width: 100px;
+        font-size: 9px;
+        height: 3vh;
+        padding: 3px;
+    }
+
+    .moving-python img,.moving-java img{
+        margin-left: -10px;
+        margin-bottom: -15px;
+    }
+    .moving-uiux img{
+        margin-left: 52px;
+        margin-bottom: -15px;
+    }
+    .moving-digital img{
+        margin-left: 55px;
+        margin-top: -20px;
+    }
+    .moving-web img{
+        margin-left: 95px;
+        margin-bottom: -15px;
+    }
+    .span-icon{
+                height: 3vh;
+        width: 25px;
+        font-size: 12px;
+        margin-left: -7px;
+    }
+    .moving-java img,
+    .moving-python img,
+    .moving-uiux img,
+    .moving-web img,
+    .moving-digital img{
+        width: 15px;
+        height: 15px;
+    }
+}
+
+@media screen and (max-width:450px) and (min-width:320px) {
+    .img-box-top {
+        height: 15vh;
+        top: -10px;
+    }
+
+    .img-box-bottom {
+        bottom: 2px;
+        height: 10vh;
+    }
+
+    .img-box-bottom button {
+        font-size: 17px;
+        width: 170px;
+    }
+
+    .img-box {
+        height: 25vh;
+    }
+
+    .images{
+        min-height: 30vh;
+    }
+
+    .img-box img{
+        height: 25vh;
+    }
+
+    .moving-java {
+               right: 9%;
+        top: 45%;
+    }
+
+    .moving-python {
+                bottom: -30%;
+        right: 10%;
+    }
+
+    .moving-uiux {
+       left: 9%;
+        top: 49%;
+    }
+
+    .moving-web {
+                bottom: -40%;
+        left: 8%;
+    }
+
+    .moving-digital {
+        top: 39px;
+        left: 42%;
+    }
+
+    .moving-java div,
+    .moving-python div,
+    .moving-uiux div,
+    .moving-digital div {
+        width: 50px;
+        padding: 3px;
+        height: 2vh;
+    }
+
+    .moving-java div p,
+    .moving-python div p,
+    .moving-uiux div p,
+    .moving-digital div p {
+        font-size: 4px;
+    }
+
+    .moving-web div {
+        width: 80px;
+        padding: 3px;
+        height: 2vh;
+    }
+
+    .moving-web div p {
+        font-size: 4px;
+    }
+
+    .img-box-bottom button {
+        width: 85px;
+        font-size: 8px;
+        height: 3vh;
+        padding: 3px;
+    }
+
+    .moving-python img,.moving-java img{
+        margin-left: -4px;
+        margin-bottom: -15px;
+    }
+    .moving-uiux img{
+        margin-left: 44px;
+        margin-bottom: -15px;
+    }
+    .moving-digital img{
+        margin-left: 45px;
+        margin-top: -20px;
+    }
+    .moving-web img{
+        margin-left: 75px;
+        margin-bottom: -15px;
+    }
+    .span-icon{
+                height: 3vh;
+        width: 20px;
+        font-size: 12px;
+        margin-left: -7px;
+    }
+    .moving-java img,
+    .moving-python img,
+    .moving-uiux img,
+    .moving-web img,
+    .moving-digital img{
+        width: 10px;
+        height: 10px;
+    }
+}
+
+.accordion-button {
+    font-family: 'Poppins', sans-serif !important;
+  font-weight: 600 !important;
+}

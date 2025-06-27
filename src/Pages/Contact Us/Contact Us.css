@@ -1,0 +1,349 @@
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  font-optical-sizing: auto;
+}
+:root{
+  --prime:#F3FEE5;
+  --box:#1A1F36;
+  --txt-bg:#90D916;
+  --txt:#ffff;
+}
+.full{
+   background: var(--prime);
+}
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.col-center{
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.i-center{
+  display: grid;
+  place-content:center;
+}
+.top-space{
+   padding-top: 20px;
+}
+.contact-page{
+  padding-bottom: 40px;
+  gap: 40px;
+}
+.contact-top {
+    padding-top: 30px;
+    gap: 20px;
+}
+.contact-pic{
+    width: 80%;
+}
+.contact-pic > img{
+    width: 100%;
+    height:570px;
+}
+.contact-txt{
+    gap:5px;
+}
+.contact-txt > h1{
+    font-size: 55px;
+    margin: 0;
+    font-weight: bolder;
+}
+.contact-txt > h1 >span{
+    color: var(--txt-bg);
+}
+.contact-txt > p , .contact-txt > b{
+    font-size: 30px;
+    margin: 0;
+}
+/* form */
+.message{
+    width: 90%;
+    box-shadow: 0px 0px 5px rgb(92, 90, 90);
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+.message > .m-txt{
+    width: 70%;
+}
+.message > .m-contact{
+  background: var(--box);
+  color: var(--txt);
+  padding: 30px 10px;
+  width: 35%;
+  border-radius: 20px;
+}
+.m-txt > .t-top{
+    width: 90%;
+}
+.t-top > p{
+  font-size: 20px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.t-top > h3{
+  color: var(--box);
+  font-weight: bolder; 
+}
+h3 > .send{
+  font-size: 30px;
+  rotate: -30deg;
+  transform:translateY(-15px);
+  margin-left: -5px;
+  color: var(--txt-bg);
+}
+.value > input , .value > textarea , .value > select{
+  width: 75%;
+  padding: 10px;
+  outline: none;
+  background: transparent;
+  border: 1px solid rgb(59, 58, 58);
+  border-radius: 5px;  
+  resize: none;
+  margin-bottom: 15px;
+}
+.value{
+    position: relative;
+}
+.value > .lab{
+    position: absolute;
+    left: 8px;
+    top:10px;
+    font-size: 18px;
+    background: var(--prime);
+}
+.value > input:focus~label , .value > select:focus~label ,.value > textarea:focus~label{
+    top: -12px;
+    transition: all 0.3s ease-in-out;
+}
+select{
+  font-weight: normal;
+}
+select > option{
+  background: var(--prime);
+}
+.value > p{
+  margin-bottom: 10px;
+  margin-top: -15px;
+  color: red;
+  font-size: small;
+}
+.top{
+    top:-12px !important;
+}
+
+
+/* contact details */
+.c-way{
+  justify-content: flex-start;
+  gap: 10px;
+  background: rgb(255, 255, 255,0.4);
+  padding: 15px;
+  width: 90%;
+  border-radius: 20px;
+} 
+.c-way > .icon{
+  width: 10%;
+  align-items: flex-start;
+} 
+.w-d{
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.m-contact {
+  gap: 20px;
+}
+.w-icon{
+  font-size: 25px;
+  transform: translateY(-8px);
+}
+.icon-loc{
+  transform: translateY(-12px);
+}
+.icon-time{
+   transform: translateY(-20px);
+}
+.s-icons{
+   width: 100%;
+   justify-content: space-evenly;
+}
+.s-icons > a > img{
+  width: 30px;
+  cursor: pointer;
+}
+.s-icons > a > .s-icon-show{
+  font-size: 35px;
+  color:var(--prime);
+}
+.s-icons >a {
+  text-decoration: none;
+}
+.social{
+  gap: 10px;
+}
+.social > b{
+  align-self: flex-start;
+  padding-left: 20px;
+}
+/* success */
+.con-success{
+  width: 100%;
+  min-height: 100dvh;
+  background: rgb(255, 255, 255,0.7);
+  z-index: 999;
+}
+.con-success > .success-cover{
+  width: 35%;
+  background: var(--txt-bg);
+  color: var(--txt);
+  padding: 30px 5px;
+  border-radius: 20px;
+  box-shadow: 1px 4px 10px black;
+  animation: zoom 1 forwards 1s ease-in-out;
+} 
+@keyframes zoom {
+   from{
+     opacity: 0;
+     scale: 0;
+   }
+   to{
+    opacity: 1;
+    scale: 1;
+   }
+}
+.c-line{
+  background: white;
+  height: 4px;
+  width: 90%;
+  border-radius: 30px;
+}
+/* tab */
+@media screen and (max-width:900px) and (min-width:700px){
+  .contact-top{
+     padding-top: 100px;
+  }   
+  .contact-txt > h1{
+     font-size: 40px;
+  }
+  .contact-txt > p , .contact-txt > b {
+    font-size: 20px;
+    text-align: center;
+  }
+  .contact-pic > img{
+    height: 450px;
+  }
+  /* form */
+  .m-txt >.t-top{
+    width: 95%;
+  }
+  .t-top > p{
+    font-size: 15px !important;
+  }
+  .value > .lab{
+    font-size: 15px;
+  }
+  .value > input, .value > textarea, .value > select {
+    width: 80%;
+  }
+  .message > .m-contact{
+    width: 40%;
+    padding: 25px 15px;
+  }
+  .c-way{
+    padding: 10px;
+    width: 95%;
+  }
+  .w-icon{
+    font-size: 20px;
+  }
+  .s-icon{
+    font-size: 25px;
+  }
+  .w-d >  small{
+    font-size: 10px;
+  }
+  /* success msg */
+  .con-success > .success-cover {
+    width: 60%;
+  }
+  .s-icons > a > img {
+    width: 25px;
+  }
+}
+/* phone */
+@media screen and (max-width:700px) and (min-width:300px){
+    .contact-top{
+     padding-top: 80px;
+  }   
+  .contact-txt > h1{
+     font-size: 30px;
+  }
+  .contact-txt > p , .contact-txt > b {
+    font-size: 15px;
+    padding: 0 5px;
+    text-align: center;
+    padding: 0 10px;
+  }
+  .contact-pic{
+    width: 90%;
+  }
+  .contact-pic > img{
+    height: 300px;
+  }
+  /* form */
+  .message{
+    flex-direction: column;
+    gap:20px
+  }
+  .message > .m-data{
+    width: 100%;
+  }
+  .m-txt > .t-top{
+    width: 100%;
+  }
+  .value > input, .value > textarea, .value > select {
+    width: 100%;
+  }
+  .value > .lab{
+    font-size: 13px;
+    top:12px;
+  }
+  .t-top > p {
+    font-size: 15px;
+  }
+  .c-way{
+    padding: 10px;
+    width: 95%;
+    border-radius: 10px;
+  }
+  .message > .m-contact{
+    padding: 20px 15px;
+    gap: 15px;
+    order: -1;
+  }
+  .s-icons > a > img {
+    width: 25px;
+  }
+  .w-d > small , .w-d > b{
+    font-size: 10px;
+  }
+  .w-icon{
+    font-size: 20px;
+  }
+  /* sucess */
+  .con-success > .success-cover {
+    width:90%;
+  }
+}
+
+.sumbitt{
+  display: flex;
+}

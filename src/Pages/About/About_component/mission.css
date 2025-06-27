@@ -1,0 +1,111 @@
+.mission_about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 15px 0px 10px 0px;
+}
+
+.head_about {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.mission_con {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  gap: 20px;
+  padding: 0px 50px 0px 50px;
+}
+
+.mission {
+  width: auto;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 70px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  position: relative;
+}
+
+.head {
+  width: 100%;
+  height: 200px;
+  border-radius: 20px 20px 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.head p {
+  font-size: 2rem;
+
+}
+
+.mission_i {
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  position: absolute;
+  top: 30%;
+  padding: 10px;
+  clip-path: polygon(50% 0%, 100% 24%, 100% 76%, 51% 100%, 0 77%, 0 24%);
+}
+
+.mission_i div {
+  width: auto;
+  padding: 10px;
+  clip-path: polygon(50% 0%, 100% 24%, 100% 76%, 51% 100%, 0 77%, 0 24%);
+}
+
+.mission_i div img {
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  width: 60%;
+  text-align: center;
+  font-size: 25px;
+
+  font-weight: 400;
+}
+
+@media (max-width:1030px) {
+  .head_about {
+    font-size: 2.9rem;
+  }
+
+  .mission_con {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media (max-width: 780px) {
+  .head_about {
+    font-size: 2.7rem;
+  }
+
+  .mission_con {
+    grid-template-columns: auto;
+  }
+}
+
+@media (max-width:560px) {
+  .head_about {
+    font-size: 2rem;
+  }
+
+  .mission_con{
+    padding: 22px;
+  } 
+  
+
+}

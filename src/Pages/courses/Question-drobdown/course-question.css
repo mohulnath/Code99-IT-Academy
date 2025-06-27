@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.questions {
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EBF8D5;
+}
+
+.question-left {
+    width: 40%;
+    padding: 100px 40px 60px 110px;
+}
+
+.question-left h1 {
+    font-size: 70px;
+     font-weight: 600;
+}
+
+.question-left h1 span {
+    color: #90D916;
+}
+
+.question-right {
+    width: 60%;
+    padding: 70px 140px 70px 100px;
+}
+
+.accordion-item {
+    width: 93%;
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 3px rgba(26, 31, 54, 0.45);
+    cursor: pointer;
+    background: rgba(243, 254, 229, 1);
+}
+
+.question-box.active {
+    height: 150px;
+}
+
+.question-box h1 {
+    font-size: 20px;
+}
+
+.accordions {
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #F3FEE5;
+}
+
+.accordion-button {
+    background-color: #F3FEE5;
+}
+
+.accor-body {
+    background-color: #E5F8C9;
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width:980px) and (min-width:700px) {
+    .questions {
+        flex-direction: column;
+    }
+
+    .question-left {
+        width: 100%;
+        padding: 30px 50px 30px 60px;
+    }
+
+    .question-right {
+        width: 100%;
+        padding: 30px 90px 30px 90px;
+    }
+
+    .accordion-item {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:700px) and (min-width:500px) {
+    .questions {
+        flex-direction: column;
+    }
+
+    .question-left {
+        width: 100%;
+        padding: 30px 50px 30px 60px;
+    }
+
+    .question-right {
+        width: 100%;
+        padding: 30px 40px 30px 40px;
+    }
+
+    .question-box h1 {
+        font-size: 15px;
+    }
+
+    .question-box {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:500px) and (min-width:320px) {
+    .questions {
+        flex-direction: column;
+    }
+
+    .question-left {
+        width: 100%;
+        padding: 30px 30px 30px 30px;
+    }
+
+    .question-right {
+        width: 100%;
+        padding: 10px 20px 15px 20px;
+    }
+
+    .question-box h1 {
+        font-size: 13px;
+    }
+
+    .question-left h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    .question-box {
+        width: 100%;
+    }
+}
+
+/* .accordion-button:not(.collapsed){
+    background-color: transparent;
+} */
+
+.accordion-button:focus {
+    box-shadow: none;
+    background-color: #F3FEE5; /* same as your inactive state */
+    color: inherit;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #F3FEE5; /* match the default */
+    color: inherit;
+    box-shadow: none;
+}
+

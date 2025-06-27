@@ -1,0 +1,243 @@
+/* /////////////// THIRD PAGE ////////////////// */
+
+.three {
+    width: 100%;
+    min-height: 70vh;
+    text-align: center;
+    margin-bottom: 90px !important;
+  }
+  
+  .three-top {
+    width: 100%;
+    text-align: center;
+    align-content: center;
+  }
+  
+  .three-top h1 {
+    margin-top: 105px !important;
+  }
+  
+  .three-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .three-left .tube {
+    width: 80px;
+    position: absolute;
+    border-radius: 50%;
+    animation: up 2s ease-in-out infinite;
+  }
+  
+  /* Keyframes for up-down animation */
+  @keyframes up {
+  
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+  
+    50% {
+      transform: translateY(-10px);
+      /* Move up */
+    }
+  }
+  
+  .three-left {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .three-left div {
+    width: 80%;
+    height: 45vh;
+    background-color: lightgray;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  
+  .three-left div img {
+    width: 350px;
+  }
+  
+  .three-right {
+    width: 50%;
+    padding: 20px;
+    align-content: center;
+  
+  }
+  
+  .three-right h1 {
+    font-weight: bold;
+  }
+  
+  .three-right-flex {
+    width: 100%;
+    height: 25vh;
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  .txt {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+    max-width: 100%;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .btn {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .btn span {
+    display: inline-block;
+    padding: 10px;
+  }
+  
+  
+  .txt div {
+    min-width: 200px;
+    height: 100px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: lightgray;
+  }
+  
+  .btn {
+    background-color: transparent;
+    border: none;
+  }
+  
+  .btn span {
+    font-size: 30px;
+  }
+  
+  .txt div img{
+    width: 100%;
+  }
+ 
+  
+  /* /////////////// THIRD PAGE RESPONSIVE ////////////////// */
+  
+  @media only screen and (min-width:768px) and (max-width:1024px) {
+    .three-bottom {
+      flex-direction: column;
+    }
+  
+    .three-left {
+      width: 70%;
+    }
+  
+    .three-right {
+      width: 80%;
+    }
+  
+    .three-left div img {
+      width: 320px;
+    }
+  
+    .three-left div {
+      height: 55vh;
+    }
+  }
+  
+  @media only screen and (min-width:425px) and (max-width:768px) {
+    .three-bottom {
+      flex-direction: column;
+    }
+  
+    .three-left {
+      width: 90%;
+    }
+  
+    .three-right {
+      width: 100%;
+    }
+  
+    .three-left div img {
+      width: 280px;
+    }
+  
+    .three-left div {
+      height: 45vh;
+    }
+  }
+  
+  @media only screen and (min-width:320px) and (max-width:948px) {
+    .three {
+      margin-top: 0px;
+    }
+  }
+  
+  @media only screen and (min-width:320px) and (max-width:500px) {
+    .three-top h1 {
+      font-size: 32px;
+    }
+  }
+  
+  @media only screen and (min-width:320px) and (max-width:425px) {
+    .three-bottom {
+      flex-direction: column;
+    }
+  
+    .three-left {
+      width: 100%;
+    }
+  
+    .three-right {
+      width: 100%;
+      padding: 0px;
+      padding-top: 20px;
+    }
+  
+    .three-left div img {
+      width: 255px;
+    }
+  
+    .three-left div {
+      height: 45vh;
+    }
+  
+    .three-right h1 {
+      font-size: 22px;
+    }
+  
+    .three-right-flex {
+      margin-top: 5px;
+    }
+  
+    .three-top h1 {
+      font-size: 25px;
+      margin-bottom: 0px;
+    }
+  }
+  
+  @media only screen and (min-width:310px) and (max-width:510px) {
+  
+    .three-left .tube {
+      width: 60px;
+    }
+  
+    .socialContainer {
+      width: 50px !important;
+      height: 50px !important;
+    }
+  
+    .socialSvg {
+      width: 30px !important;
+    }
+  }

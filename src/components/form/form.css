@@ -1,0 +1,155 @@
+
+/* /////////////// NINETH PAGE MESSAGE-BOX ////////////////// */
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: none;
+  border: 1px solid #ccc; /* optional: your custom border */
+}
+
+
+.formBox {
+    margin-top: 130px;
+    margin-bottom: 130px;
+   }
+   
+   .formBox h1 {
+     font-weight: 600;
+     width: 80%;
+     font-size: 35px;
+     line-height: 100%;
+     letter-spacing: 0%;
+   }
+   
+   .formBox>div {
+     width: 100%;
+     padding: 40px 15px;
+     z-index: 0;
+     background-color: var(--dark-blue);
+     color: var(--white);
+   }
+   
+   .formBox select>option {
+     background-color: var(--dark-blue);
+   }
+   
+   .formBox select:focus {
+     box-shadow: none !important;
+   }
+   
+   .formBox img {
+     width: 80%;
+   }
+   
+   .formBox form {
+     width: 80%;
+   }
+   
+   .formBox input,
+   .formBox select,
+   .formBox textarea {
+     background-color: transparent !important;
+     z-index: 5;
+     color: var(--white) !important;
+     border: 1px solid var(--white) !important;
+     width: 100%;
+     padding: 15px;
+     border-radius: 10px;
+   }
+   
+   .formBox textarea {
+     height: 150px;
+   }
+   
+   .formBox label {
+     position: absolute;
+     top: 10px;
+     background-color: var(--dark-blue);
+     left: 20px;
+     transition: all 0.5s;
+     padding: 5px;
+     color: var(--white) !important;
+   }
+   
+   .formBox input:focus+label,
+   .formBox select:focus+label,
+   .formBox textarea:focus+label,
+   .formBox input:valid+label,
+   .formBox select:valid+label,
+   .formBox textarea:valid+label {
+     top: -16px;
+     transform: scale(0.9);
+   }
+ 
+   
+   .formBox svg {
+     background-color: var(--green);
+     color: var(--white);
+     height: 30px;
+     width: 30px;
+     border-radius: 50%;
+     padding: 8px;
+     transform: rotate(-45deg) translateX(-5px)translateY(-7px);
+   }
+   
+   svg {
+     transition: all 0.8s;
+   }
+   
+   nav button+span {
+     background-color: var(--green);
+     display: flex;
+     justify-content: center;
+     padding: 8px;
+     color: var(--white);
+     align-items: center;
+     border-radius: 50%;
+     position: relative;
+     transform: rotate(-45deg) translateX(-7px)translateY(-6px);
+   }
+   
+   
+   .confirmBox {
+     position: fixed;
+     top: 0;
+     left: 0;
+     background-color: #D9D9D980;
+     backdrop-filter: blur(10px);
+     z-index: 9999;
+   }
+   
+   .confirmBox div {
+     padding: 20px;
+     background-color: var(--green);
+     color: var(--white);
+     width: 500px;
+     gap: 10px;
+     border-radius: 50px;
+   }
+   
+   .confirmBox img {
+     width: 50px;
+     height: 50px;
+   }
+   
+   
+   /* /////////////// NINETH PAGE MESSAGE-BOX RESPONSIVE ////////////////// */
+   
+   @media only screen and (max-width:500px) {
+   
+     .formBox h1 {
+       font-size: 27.6px;
+     }
+   
+     .formBox label {
+       font-size: 15.33px;
+       line-height: 21.46px;
+     }
+   
+     .formBox button {
+       font-size: 15.33px;
+       line-height: 100%;
+     }
+    }   

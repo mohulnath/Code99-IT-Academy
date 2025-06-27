@@ -1,0 +1,313 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.back-home{
+    background-color: #7ac015;   
+    width: 140px;
+    height: 40px;
+    background-color: #90D916;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-weight: 600;
+    padding: 5px;
+    text-align: center;
+}
+
+.navba {
+    width: 100%;
+    max-width: 1200px;  /* or 1000px */
+    margin: 0 auto;
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px; /* 👈 Controlled padding */
+    color: black;
+  }
+  
+
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.logo img {
+    height: 60px;
+    object-fit: contain;
+}
+
+.logo b {
+    color: #90D916;
+    font-size: 25px;
+    text-align: left;
+}
+
+.logo p {
+    color: black;
+    font-size: 11px;
+    margin-top: -5px;
+}
+
+.logo div{
+    margin-top: 10px;
+}
+
+
+.items {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+    width: 80%;
+}
+
+.items div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.items div .oico {
+    font-size: 22px;
+    /* margin-top: -6px; */
+}
+
+.items div .oicco {
+    font-size:17px !important;
+    margin-bottom: 3px;
+}
+
+.items span{
+    font-size: 20px;
+}
+
+.items div a {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.items div b:hover {
+    color: #90D916;
+}
+
+.sm{
+    font-size: 10px;
+}
+
+.items div button:hover {
+    cursor: pointer;
+}
+
+.span:hover {
+    cursor: pointer;
+}
+
+.side-menu {
+    display: none;
+}
+
+.side-menu span {
+    font-size: 60px;
+    cursor: pointer;
+}
+
+.side-menu span svg{
+    margin-top: -10px;
+    font-size: 45px;
+}
+
+.items div b a {
+    transition: all 0.3s;
+}
+
+.down{
+    transition: all 0.3s !important;
+    color: rgb(0, 0, 0);
+    margin-top: -2px;
+}
+
+.side-bar {
+    width: 100%;
+    min-height: 90vh;
+    backdrop-filter: blur(8px);  /* Blur effect */
+    background-color: rgb(152 157 156 / 30%); /* Dim background */
+    border-radius: 12px 0 0 12px;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    padding: 30px 20px;
+    position: fixed;
+    right: 0;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    row-gap: 25px;
+    transition: all 0.5s !important;
+}
+
+
+.side-bar h1 {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.side-bar div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+    color: #ffffff;
+    transition: transform 0.2s, color 0.2s;
+    cursor: pointer;
+}
+
+.side-bar div:hover {
+    color: #90D916;
+    transform: translateX(5px);
+}
+
+.side-bar span {
+    font-size: 1.4rem;
+    color: black;
+}
+
+.side-bar div a {
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+
+.side-bar .dd {
+    display: flex;
+    gap: 0 !important;
+    margin-top: auto;
+    align-items: center;
+}
+
+.side-bar .dd button {
+    width: 110px;
+    height: 30px;
+    background-color: #90D916;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-weight: 600;
+}
+
+.side-bar .dd .span {
+    width: 30px;
+    height: 30px;
+    background-color: #90D916;
+    color: white;
+    border-radius: 50%;
+    margin-left: -9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.items div button:hover {
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:980px) and (min-width:320px) {
+    .items {
+        display: none;
+    }
+
+    .side-menu {
+        display: block;
+    }
+
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .logo {
+        margin-left: 0px;
+    }
+
+    .logo div p{
+        margin-top: -9px;
+    }
+}
+
+.items div b a{
+    color: black;
+}
+
+.items div b a:hover{
+    color: #7ac015;
+}
+
+.items div b a:hover .down{
+    color: #7ac015;
+}
+
+
+.dropdown-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.course-link {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.dropdown {
+    flex-direction: column;
+    position: absolute;
+    top: 30px;
+    background-color: whitesmoke;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    z-index: 999;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    padding: 5px 10px;
+    white-space: nowrap;
+}
+
+.dropdown a:hover {
+    background: linear-gradient(236.19deg, rgba(197, 255, 96, 0.3) 8.77%, rgba(144, 217, 22, 0.3) 70.06%);
+    color: black;
+    border-radius: 5px;
+}
+
+.dropdown-container:hover .dropdown {
+    display: flex;
+}
+
+.items a{
+    color: black;
+    font-weight: 500;
+}
+
+.dropdown {
+    font-weight: 500;
+}
+

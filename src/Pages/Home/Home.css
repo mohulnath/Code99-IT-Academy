@@ -1,0 +1,890 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 🎯 LOGO - Volte Semibold (Custom Font Setup) */
+@font-face {
+  font-family: 'Volte Semibold';
+  src: url('/fonts/Volte-Semibold.woff2') format('woff2'); /* Adjust the path */
+  font-weight: 600;
+  font-style: normal;
+}
+
+.logo div b,p {
+  font-family: 'Volte Semibold', sans-serif !important;
+}
+
+
+/* 🚀 HERO SECTION - Rokkitt */
+.home h1 {
+  font-family: 'Rokkitt', serif !important;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+
+/* 🏷️ HEADINGS - Poppins */
+h1, h2, h3, h4, h5, h6 , .span-bold {
+  font-family: 'Poppins', sans-serif !important;
+  font-weight: 600 !important;
+}
+
+
+/* 📄 CONTENT - Roboto */
+body, p, span, li {
+  font-family: 'Roboto', sans-serif !important;
+  font-weight: 400 !important;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Hide scrollbar for Webkit browsers */
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* //////////////////// FIRET PAGE /////////////////////// */
+
+.home {
+  width: 100%;
+  background: linear-gradient(236.19deg, rgba(144, 217, 22, 0.3) 8.77%, rgba(255, 255, 255, 0.4) 70.06%);
+  padding: 60px 20px 20px 20px;
+  text-align: center;
+}
+
+.slid-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  overflow-x: scroll;
+}
+
+.slid-box div h1 {
+  font-size: 40px;
+}
+
+.slid-box div {
+  min-width: 100%;
+  margin-top: 20px;
+}
+
+.home div img {
+  width: 100%;
+}
+
+.carousel-item {
+  transition: transform .4s ease-in-out !important;
+}
+
+
+.carousel-indicators [data-bs-target] {
+  width: 12px !important;
+  height: 11px !important;
+  background-color: #767676 !important;
+}
+
+.carousel-indicators {
+  bottom: -63px !important;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  display: none !important;
+}
+
+.headding {
+  padding-top: 20px;
+}
+
+/* /////////////// FIRET PAGE RESPONSIVE ////////////////// */
+
+@media only screen and (min-width:625px) and (max-width:853px) {
+  .home h1 {
+    font-size: 40px;
+  }
+}
+
+
+@media only screen and (min-width:445px) and (max-width:625px) {
+  .home h1 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (min-width:320px) and (max-width:445px) {
+  .home h1 {
+    font-size: 20px;
+  }
+
+  .headding {
+    font-size: 18px;
+    padding-top: 10px;
+  }
+}
+
+/* /////////////// SECOUND PAGE ////////////////// */
+
+.PageTwo {
+  width: 100%;
+  min-height: 80vh;
+  text-align: center;
+}
+
+.title {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 50px !important;
+  margin-top: 130px !important;
+  font-weight: bold;
+}
+
+@media only screen and  (max-width:957px) {
+
+.title {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 70px !important;
+  margin-top: 80px !important;
+  font-weight: bold;
+}
+}
+
+
+.boxs {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 0 0 25px 0;
+}
+
+.track:hover {
+  animation-play-state: paused;
+}
+
+
+.track:not(:hover) {
+  animation-play-state: running;
+}
+
+.track {
+  display: flex;
+  gap: 40px;
+  animation: scrollleft 50s linear infinite;
+  width: max-content;
+  padding: 0px 20px 0px 20px;
+}
+
+@keyframes scrollleft {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.b1 {
+  width: 280px;
+  /* 🔁 add fixed width */
+  height: 450px;
+  /* 🔁 add fixed height */
+  background-color: white;
+  border-radius: 14px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s;
+  flex-shrink: 0;
+  /* 🔐 prevent shrinking */
+}
+
+
+
+.b1:hover {
+  scale: 1.03;
+}
+
+.top {
+  width: 100%;
+  height: 100px;
+  /* fixed height */
+  background-color: white;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.im1 {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  /* 💯 maintains aspect ratio */
+  padding: 10px;
+  /* ✅ avoids overflow/stretching */
+}
+
+
+
+.imag {
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.im2 {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.bottom {
+  width: 100%;
+  background-color: #90D916;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+  padding: 10px;
+  text-align: center;
+}
+
+.bottom h2 {
+  font-size: 24px;
+  color: white;
+}
+
+.bottom p {
+  font-size: 16px;
+  color: black;
+}
+
+element.style {
+  border: 2px solid #3bbc13 !important;
+}
+
+/* /////////////// SECOUND PAGE RESPONSIVE ////////////////// */
+
+@media only screen and (min-width:320px) and (max-width:946px) {
+
+  .PageTwo {
+    padding: 0;
+  }
+  
+}
+
+@media only screen and (min-width:425px) and (max-width:635px) {
+  .PageTwo h1 {
+    font-size: 25px;
+    font-weight: bold;
+  }
+}
+
+@media only screen and (min-width:320px) and (max-width:425px) {
+  .PageTwo h1 {
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .b1 .imag {
+    width: 160px;
+    height: 160px;
+    margin-top: 0;
+  }
+
+  .boxs .track .b1 {
+    min-width: 255px;
+    min-height: 400px;
+  }
+
+
+  .bottom h2 {
+    font-size: 20px;
+    color: white;
+  }
+
+  .bottom p {
+    font-size: 15px;
+    color: black;
+  }
+
+  .home {
+    padding: 40px 10px 10px 10px;
+  }
+
+  .carousel-indicators [data-bs-target] {
+    width: 10px !important;
+    height: 10px !important;
+  }
+
+  .item-left,
+  .item-right {
+    padding: 0 !important;
+  }
+
+  .slid-bottom {
+    margin-bottom: 0px !important;
+  }
+
+}
+
+
+/* /////////////// FOURTH PAGE SLIDING ////////////////// */
+
+.successCaro{
+  overflow: hidden;
+}
+
+.caroAutoplay {
+  animation: slide 80s linear infinite;
+  transform-origin: left;
+  align-items: stretch !important;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(-0%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.caroAutoplay2 {
+  animation: slide 80s linear infinite reverse;
+  transform-origin: left;
+}
+
+/* .caroAutoplay2 img{
+  height: 70px;
+} */
+
+.placedComp img {
+  object-fit: contain;
+  background-color: white;
+  padding: 10px;
+  width: 200px;
+  height: 70px;
+  /* box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.25); */
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+
+/* /////////////// FIFTH PAGE SUFIL-BOX ////////////////// */
+
+.sufil-box {
+  width: 100%;
+  min-height: 100vh;
+  padding: 0px 10px 0px 10px !important;
+  text-align: center;
+}
+
+.six-box {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.content-one {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 40px;
+}
+
+
+.content-two {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 150px;
+}
+
+
+.content-three {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 40px;
+}
+
+
+
+.box-1 {
+  width: 300px;
+  height: 380px;
+  background-color: #1A1F36;
+  border-radius: 20px;
+  overflow: hidden;
+  color: white;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.box-1 div {
+  margin: 30px;
+}
+
+.box-1 div h2 {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+
+.content-two .box-1 div h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.box-1 h2 {
+  transition: all 0.3s;
+}
+
+.content-two .box-1 .mork {
+  margin-top: 10px;
+}
+
+.box-1 img {
+  width: 101%;
+}
+
+.box-1:hover div h2 {
+  color: #a1ed1e;
+  scale: 1.05;
+}
+
+/* /////////////// FIFTH PAGE SUFIL-BOX RESPONSIVE ////////////////// */
+
+@media only screen and (min-width:846px) and (max-width:989px) {
+  .box-1 {
+    width: 250px;
+    height: 330px;
+  }
+
+  .box-1 div h2 {
+    font-size: 25px;
+  }
+
+  .box-1 div p {
+    font-size: 14px;
+  }
+
+  .box-1 img {
+    width: 101%;
+  }
+
+  .content-one {
+    margin-top: 180px;
+  }
+
+  .content-two {
+    margin-top: 90px;
+  }
+
+  .content-three {
+    margin-top: 0px;
+  }
+}
+
+@media only screen and (min-width:670px) and (max-width:846px) {
+  .content-one {
+    flex-direction: row;
+  }
+
+  .content-two {
+    flex-direction: row;
+  }
+
+  .content-three {
+    flex-direction: row;
+  }
+
+  .six-box {
+    flex-direction: column;
+  }
+
+  .content-two {
+    margin-top: 0;
+  }
+
+  .six-box {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (min-width:320px) and (max-width:670px) {
+  .content-one {
+    flex-direction: row;
+  }
+
+  .content-two {
+    flex-direction: row;
+  }
+
+  .six-box {
+    margin-top: 50px;
+  }
+
+  .content-three {
+    flex-direction: row;
+  }
+
+  .six-box {
+    flex-direction: column;
+  }
+
+  .content-two {
+    margin-top: 0;
+  }
+
+  .box-1 {
+    width: 250px;
+    height: 330px;
+  }
+
+  .box-1 div h2 {
+    font-size: 25px;
+  }
+
+  .box-1 div p {
+    font-size: 14px;
+  }
+
+  .box-1 img {
+    width: 101%;
+  }
+}
+
+@media only screen and (min-width:425px) and (max-width:570px) {
+  .content-one {
+    flex-direction: column;
+  }
+
+  .content-two {
+    flex-direction: column;
+  }
+
+  .content-three {
+    flex-direction: column;
+  }
+
+  .box-1 {
+    width: 350px;
+    height: 330px;
+  }
+
+  .box-1 img {
+    width: 101%;
+  }
+
+  .box-1 .break {
+    margin-top: -25px;
+  }
+
+}
+
+
+@media only screen and (min-width:320px) and (max-width:425px) {
+  .content-one {
+    flex-direction: column;
+  }
+
+  .content-two {
+    flex-direction: column;
+  }
+
+  .content-three {
+    flex-direction: column;
+  }
+
+  .box-1 {
+    width: 290px;
+    height: 330px;
+  }
+
+  .box-1 img {
+    width: 101%;
+  }
+
+  .box-1 .break {
+    margin-top: -25px;
+  }
+
+  .sufil-box h1 {
+    font-size: 30px;
+  }
+}
+
+/* /////////////// SIXTH PAGE VIDEOS ////////////////// */
+
+.video-page {
+  width: 100%;
+  min-height: 85vh;
+}
+
+.video-page h1 {
+  text-align: center;
+}
+
+
+.fourbox-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.fourbox {
+  display: flex;
+  gap: 30px;
+  animation: autoScroll 40s linear infinite;
+  width: fit-content;
+  padding: 0px 20px 20px 0px !important;
+}
+
+.fourbox:hover {
+  animation-play-state: paused;
+}
+
+.fourbox div {
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.fourbox div:hover img {
+  scale: 1.06;
+}
+
+.fourbox div img {
+  width: 300px;
+  height: 500px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: all 0.5s;
+  border-radius: 5px;
+}
+
+
+.fourbox::-webkit-scrollbar {
+  display: none;
+}
+
+.fourbox {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+
+@keyframes autoScroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* /////////////// SEAVENTH PAGE COURESE ////////////////// */
+
+.courses-box {
+  width: 100%;
+  min-height: 70vh;
+  position: relative;
+  text-align: center;
+}
+
+.courses-box .four-box {
+  /* min-height: 70vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0 30px 0px 30px;
+}
+
+.type-box {
+  width: 260px;
+  min-height: 375px;
+  background: #F3FEE5;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  transition: 0.9s;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.type-box img {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.third-image{
+  width: 160px !important;
+  height: 200px !important;
+}
+
+.type-box h2 {
+  font-size: 20px;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.type-box p {
+  font-size: 13px;
+  margin-top: 15px;
+}
+
+.type-box button {
+  width: 100%;
+  height: 6vh;
+  border: none;
+  border-radius: 10px;
+  background: #1A1F36;
+  color: white;
+  font-weight: 600;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.type-box:hover {
+  background: #1A1F36;
+  color: white;
+}
+
+.type-box:hover.type-box button {
+  background-color: #90D916;
+  color: white;
+}
+
+.courses-box .four-box .button {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  padding-block: 0.5rem;
+  padding-inline: 1.25rem;
+  background-color: #1A1F36;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #ffff;
+  gap: 10px;
+  font-weight: bold;
+  border: 3px solid #ffffff4d;
+  outline: none;
+  overflow: hidden;
+  font-size: 15px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  transition: all 0.3s ease-in-out;
+}
+
+.courses-box .four-box .button:hover {
+  transform: scale(1.05);
+  border-color: #fff9;
+}
+
+.courses-box .four-box .button:hover .icon {
+  transform: translate(4px);
+}
+
+.courses-box .four-box .button:hover::before {
+  animation: shine 1.5s ease-out infinite;
+}
+
+.courses-box .four-box .button::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-image: linear-gradient(120deg,
+      rgba(255, 255, 255, 0) 30%,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0) 70%);
+  top: 0;
+  left: -100px;
+  opacity: 0.6;
+}
+
+@keyframes shine {
+  0% {
+    left: -100px;
+  }
+
+  60% {
+    left: 100%;
+  }
+
+  to {
+    left: 100%;
+  }
+}
+
+/* /////////////// SEAVENTH PAGE COURESE RESPONSIVE ////////////////// */
+
+@media only screen and (min-width:320px) and (max-width:425px) {
+  .courses-box h1 {
+    font-size: 33px;
+  }
+}
+
+/* /////////////// EIGHTH PAGE FRAME ////////////////// */
+
+.frame-div img {
+  width: 100%;
+  margin-top: 100px;
+  object-fit: contain;
+}
+
+
+
+.buttonss {
+    min-width: 110px;
+    height: 30px;
+    background-color: #90D916;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    font-weight: 600;
+}
+
+.spanss {
+    min-width: 30px;
+    height: 30px;
+    background-color: #90D916;
+    color: white;
+    border-radius: 50%;
+    margin-left: -13px;
+    /* align-content: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+}
+
+@media only screen and (min-width:320px) and (max-width:425px){
+  .title{
+      font-size: 28px !important;
+  }
+}
