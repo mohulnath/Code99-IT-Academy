@@ -1,0 +1,28 @@
+# 🍎 macOS system junk
+.DS_Store
+
+# 📦 Node modules
+node_modules/
+
+# 🚧 Vite build output
+dist/
+.vite/
+
+# 🧪 Logs
+*.log
+
+# 💻 VS Code settings
+.vscode/
+
+# 🔐 Env config
+.env
+.env.*.local
+
+# 🗜️ Zip and temp files
+*.zip
+*.tar
+*.rar
+
+# 🧪 Optional test coverage
+coverage/
+
