@@ -16,6 +16,8 @@ import Reviews from '../../components/Review/reviews';
 import Footer from '../../components/Footer/MainFooter';
 import CourseQuestion from '../../Pages/courses/Question-drobdown/course-question'
 
+import Launch from './launch/launch'
+
 import Image from '../../assets/images';
 
 import { IoIosArrowDown } from "react-icons/io";
@@ -370,49 +372,9 @@ export default function Courses({ coursetitle, onSelectCourse, setNavBool }) {
             <CourseQuestion />
 
             {/* ========================================================= */}
-            {/* <!---------------------------images------------------------> */}
+            {/* <!---------------------------images Launch------------------------> */}
 
-            <div className="imagess">
-                <div className="img-box">
-                    <img src={Image.image} className="box-img" />
-                    <div className="img-box-top">
-                        <div className="moving-java">
-                            <img src={Image.cursortow} alt="" />
-                            <div>
-                                <p> Full Stack Java </p>
-                            </div>
-                        </div>
-                        <div className="moving-python">
-                            <img src={Image.cursorone} alt="" />
-                            <div>
-                                <p> Full Stack Python </p>
-                            </div>
-                        </div>
-                        <div className="moving-digital">
-                            <div>
-                                <p> Digital Marketing </p>
-                            </div>
-                            <img src={Image.cursorthree} alt="" />
-                        </div>
-                        <div className="moving-uiux">
-                            <img src={Image.cursorfive} alt="" />
-                            <div>
-                                <p> UI/UX Designer </p>
-                            </div>
-                        </div>
-                        <div className="moving-web">
-                            <img src={Image.cursorfore} alt="" />
-                            <div>
-                                <p> Full Stack Web Development </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className='img-box-bottom'>
-                        <button> Contact Us Now </button>
-                        <span className='span-icon'><MdArrowOutward /></span>
-                    </div>
-                </div>
-            </div>
+          <Launch/>
 
             {/* ======================================================= */}
             {/* <!------------------------footer--------------------> */}

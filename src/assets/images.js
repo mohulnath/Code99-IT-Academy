@@ -90,11 +90,13 @@ import marketing from './courses-images/digitalMarketing.png';
 import overview from './courses-images/overview.png';
 import img from './courses-images/img.png';
 import uiux from './courses-images/otheruiux.png';
+
 import cursorone from './courses-images/pythoncursor.png';
 import cursortow from './courses-images/javacursor.png';
 import cursorthree from './courses-images/digitalcursor.png';
 import cursorfore from './courses-images/webcursor.png';
 import cursorfive from './courses-images/uiuxcursor.png';
+
 const Images = {
 
   webdeve,

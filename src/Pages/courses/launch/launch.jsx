@@ -9,7 +9,7 @@ export default function Launch(){
 
             <div className="imagess">
                 <div className="img-box">
-                    <img src={Image.image} className="box-img"/>
+                    <img src={Image.img} className="box-img"/>
                     <div className="img-box-top">
                         <div className="moving-java">
                             <img src={Image.cursortow} alt="" />
