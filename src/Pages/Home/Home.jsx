@@ -14,7 +14,7 @@ import Images from '../../assets/images';
 import { IoMdArrowDropleft, IoMdArrowDropright } from "react-icons/io";
 
 // Components
-import Reviews from '../../components/Review/reviews';
+import Reviews from '../../components/Review/Reviews';
 import WhyChooseUs from '../../components/WhyChooseUs/WhyChooseUs';
 import MainFooter from '../../components/Footer/MainFooter';
 
