@@ -12,7 +12,7 @@ import CountUp from "../courses/Count/countup";
 
 import Whychooseus from '../../components/WhyChooseUs/WhyChooseUs';
 import Course from '../../Datas/course';
-import Reviews from '../../components/Review/reviews';
+import Reviews from '../../components/Review/Reviews';
 import Footer from '../../components/Footer/MainFooter';
 import CourseQuestion from '../../Pages/courses/Question-drobdown/course-question'
 
